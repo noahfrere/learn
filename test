@@ -1,0 +1,16 @@
+package jayJay;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class SquareRootTest {
+
+	@Test
+	public void testSquareRoot() {
+		SquareRoot test = new SquareRoot();
+		int result = test.Scanner(16);
+		assertEquals(4.0, result);
+		}
+		
+}	
