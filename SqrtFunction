@@ -1,0 +1,32 @@
+package jayJay;
+
+import java.util.Scanner;
+
+public class SqrtFunction {
+	
+	public SqrtFunction(){
+		
+	}
+
+	static Scanner sc = new Scanner(System.in);
+	public void get(double number){
+	
+		double x = 0;
+		double x1, x2, x3;
+		double S;
+		
+		System.out.print("Wilkommen to the Square Root function per Newton. Please enter a number "
+				+ "that you want the square root of.");
+		S = sc.nextDouble();
+		System.out.print("Now enter your best guess for the answer.");
+		x = sc.nextDouble();
+		
+		x1 = x - (((x*x)-S) / (2*x));
+		x2 = x1 - (((x1*x1)-S) / (2*x1));
+		x3 = x2 - (((x2*x2)-S) / (2*x2));
+		number = x3;
+		return;
+	}
+	
+}
+	
